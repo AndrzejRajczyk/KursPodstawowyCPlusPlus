@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iotream>
 using namespace std;
 int main()
 {
@@ -16,3 +16,4 @@ int main()
     std::cout << "Liczba b = " << b << std::endl;
     return 0;
 }
+*/
