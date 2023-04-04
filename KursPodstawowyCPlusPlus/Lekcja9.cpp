@@ -1,3 +1,5 @@
+
+/*
 #include <iostream>
 int main()
 {
@@ -19,3 +21,4 @@ int main()
     std::cout << "(!a && b && !c) = " << (!a && b && !c) << std::endl;
     return 0;
 }
+*/
