@@ -1,4 +1,4 @@
-#include <limits>
+/*#include <limits>
 #include <iostream>
 using namespace std;
 
@@ -44,7 +44,7 @@ int main() {
 	return 0;
 
 }
-
+*/
 
 
 /*Napisz program, który wczyta trzy liczby rzeczywiste, a na koñcu programu je wszystkie wypisze. Zadbaj o to, by bufor strumienia wejœciowego by³ za ka¿dym razem czyszczony. Wynik koñcowy powinien równie¿ zawieraæ informacje czy wczytanie danej liczby siê powiod³o.
