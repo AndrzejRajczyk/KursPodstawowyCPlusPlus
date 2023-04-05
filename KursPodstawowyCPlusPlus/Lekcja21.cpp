@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 using namespace std;
 int main() {
@@ -14,7 +15,7 @@ int main() {
 	6. Je¿eli wprowadzon¹ liczb¹ jest 0, zakoñcz program.
 	Przyk³adowe menu wyboru dzia³ania: */
 
-
+/*
 	int x;
 	int y;
 	char dzialanie;
@@ -73,14 +74,14 @@ int main() {
 			break;
 
 
-	}
+		}
 
 
 
 
 
 	return 0;
-}
+}*/
 	
 
 
