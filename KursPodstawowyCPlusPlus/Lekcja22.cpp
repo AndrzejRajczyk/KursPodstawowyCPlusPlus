@@ -17,7 +17,7 @@ int main() {
 	int counter = 1;
 
 
-	cout << "Zgadnij jaka liczbe wylosowa³em. Liczba jest wieksza lub rowna od zera i nie wiêksza od 1000 ";
+	cout << "Zgadnij jaka liczbe wylosowa³em. Liczba jest wieksza lub rowna od zera i nie wieksza od 1000 ";
 	zgadywana = -1;
 	srand(time(NULL));
 	losowana = (rand() % 1000) + 1;
@@ -39,7 +39,7 @@ int main() {
 		}
 	
 	if(zgadywana==losowana) {
-		cout << "Brawo zgad³es za " << counter << "razem";
+		cout << "Brawo zgadles za " << counter << "razem";
 
 	}
 }
