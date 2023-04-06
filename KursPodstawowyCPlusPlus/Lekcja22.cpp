@@ -15,31 +15,70 @@ int main() {
 	int losowana;
 	int zgadywana;
 	int counter = 1;
+	bool errorChecker;
 
 
-	cout << "Zgadnij jaka liczbe wylosowa³em. Liczba jest wieksza lub rowna od zera i nie wieksza od 1000 ";
+	cout << "Zgadnij jaka liczbe wylosowalem. Liczba jest wieksza lub rowna od zera i nie wieksza od 1000 ";
+	cout << endl;
+	;
 	zgadywana = -1;
 	srand(time(NULL));
-	losowana = (rand() % 1000) + 1;
-	cout << "Podaj swoja liczbê";
+	losowana = (rand() % 1001) + 1;
+	cout << "Podaj swoja liczbe: ";
 	cin >> zgadywana;
+	errorChecker = cin.fail();
 	cin.clear();
+
+
+
+	while (errorChecker == true) {
+		cin.ignore(1000, '\n');
+		cout << "Podaj prawidlowa liczbe: ";
+		//cin.ignore(1000, '\n');
+		cin >> zgadywana;
+		errorChecker = cin.fail();
+		cin.clear();
+	}
+
 
 	while (zgadywana != losowana) {
 		if (zgadywana < losowana) {
-			cout << "Twoja liczba jest za ma³a sprobuj jeszcze raz: ";
+			cout << "Twoja liczba jest za mala sprobuj jeszcze raz: ";
 			counter++;
 			cin >> zgadywana;
+			errorChecker = cin.fail();
+			cin.clear();
+			/// <summary>
+			/// Zabezpiecznie przed zla liczba
+			/// </summary>
+			while (errorChecker == true) {
+				cin.ignore(1000, '\n');
+				cout << "Podaj prawidlowa liczbe: ";
+				//cin.ignore(1000, '\n');
+				cin >> zgadywana;
+				errorChecker = cin.fail();
+				cin.clear();
+			}
+			if (zgadywana > losowana) {
+				cout << "Twoja liczba jest za duza sprobuj jeszcze raz: ";
+				counter++;
+				cin >> zgadywana;
+				errorChecker = cin.fail();
+				cin.clear();
+				while (errorChecker == true) {
+					cin.ignore(1000, '\n');
+					cout << "Podaj prawidlowa liczbe: ";
+					//cin.ignore(1000, '\n');
+					cin >> zgadywana;
+					errorChecker = cin.fail();
+					cin.clear();
+				}
+			}
 		}
-		if (zgadywana > losowana) {
-			cout << "Twoja liczba jest za duza sprobuj jeszcze raz: ";
-			counter++;
-			cin >> zgadywana;
-		}
-		}
-	
-	if(zgadywana==losowana) {
-		cout << "Brawo zgadles za " << counter << "razem";
 
+		if (zgadywana == losowana) {
+			cout << "Brawo zgadles za " << counter << " razem";
+
+		}
 	}
 }
