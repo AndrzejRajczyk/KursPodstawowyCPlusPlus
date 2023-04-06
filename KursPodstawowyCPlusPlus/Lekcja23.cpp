@@ -102,7 +102,7 @@ void dzialanie(int x, int y) {
 
 void randomizeNumber(int x, int y) {
     cout << endl;
-    srand(time(NULL));
+    srand(time(nullptr));
     int result  = (rand() % (x-y)) + y;
     
     cout << "losowa liczba z zakresu od " << y << " do x " << x << " to " << result << endl;
