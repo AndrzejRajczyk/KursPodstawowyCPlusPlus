@@ -5,7 +5,7 @@
 4. Je¿eli gracz trafi liczbê wylosowan¹ to progam koñczy dzia³anie, wypisuj¹c na ekran wylosowan¹ liczbê oraz liczbê 'strza³ów', które odda³ gracz.
 Gra ma byæ zabezpieczona przed mo¿liwoœci¹ wprowadzenia b³êdnych wartoœci liczbowych.*/
 
-
+/*
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -82,3 +82,4 @@ int main() {
 		}
 	}
 }
+*/
