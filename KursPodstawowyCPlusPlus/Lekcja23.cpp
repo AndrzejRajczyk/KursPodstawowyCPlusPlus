@@ -120,13 +120,6 @@ int main() {
    y =  wczytajLiczbe();
     dzialanie(x,y);
     randomizeNumber(x,y);
-    srand(time(NULL));
-    randomizeNumber(x,y);
-    srand(time(NULL));
-    randomizeNumber(x,y);
-    srand(time(NULL));
-    randomizeNumber(x,y);
-    srand(time(NULL));
     randomizeNumber(60,50);
 
 
