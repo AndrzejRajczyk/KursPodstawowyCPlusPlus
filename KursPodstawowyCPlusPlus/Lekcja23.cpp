@@ -43,6 +43,8 @@
 Poprzedni dokument*/
 
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 int wczytajLiczbe()
 {
@@ -98,6 +100,14 @@ void dzialanie(int x, int y) {
         }
     }
 
+void randomizeNumber(int x, int y) {
+    cout << endl;
+    srand(time(NULL));
+    int result  = (rand() % (x-y)) + y;
+    
+    cout << "losowa liczba z zakresu od " << y << " do x " << x << " to " << result << endl;
+}
+
 
 
 
@@ -108,7 +118,18 @@ int main() {
 
    x =  wczytajLiczbe();
    y =  wczytajLiczbe();
-    dzialanie(x, y);
+    dzialanie(x,y);
+    randomizeNumber(x,y);
+    srand(time(NULL));
+    randomizeNumber(x,y);
+    srand(time(NULL));
+    randomizeNumber(x,y);
+    srand(time(NULL));
+    randomizeNumber(x,y);
+    srand(time(NULL));
+    randomizeNumber(60,50);
+
+
 
 
 
