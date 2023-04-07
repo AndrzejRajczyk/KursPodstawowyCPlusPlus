@@ -109,7 +109,7 @@ void randomizeNumber(int x, int y) {
 }
 
 
-
+/*
 
 int main() {
     int x;
@@ -121,11 +121,12 @@ int main() {
     dzialanie(x,y);
     randomizeNumber(x,y);
     randomizeNumber(60,50);
+    }
+    */
 
 
 
 
 
 
-}
 
