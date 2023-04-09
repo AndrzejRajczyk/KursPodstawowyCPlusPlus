@@ -44,7 +44,7 @@ using  namespace std;
 			 return a;
 		 }
 
-
+		 /*
 		 int main() {
 			 int tablica[999];
 			 losowanie(tablica);
@@ -54,5 +54,5 @@ using  namespace std;
 
 			 return 0;
 		 }
-
+		 */
 
