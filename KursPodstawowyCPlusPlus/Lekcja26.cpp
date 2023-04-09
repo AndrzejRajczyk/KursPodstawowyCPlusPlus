@@ -11,8 +11,7 @@ Treœæ niniejszego rozdzia³u nie zawiera rozwi¹zania problemu lecz wskazówki - za
 #include <cstdlib>
 #include <iostream>
 #include <ctime>
-using  namespace std;
-
+using namespace std;
 
 
 int   wczytajLiczbê() {
@@ -34,94 +33,87 @@ int   wczytajLiczbê() {
 }
 
 int (liczbyDoTabeli)(int tabelaUzera[], int counter, int a) {
-	bool chcecker = true;
+
 	if (counter == 0) {
 		tabelaUzera[0] = a;
-		
+
 	}
 
 	if (counter != 0) {
 		int temp;
 		for (int i = 0; i < counter; i++) {
-			
+
 			temp = tabelaUzera[i] - a;
 
-			if (temp ==0) {
-				return counter-1;
+			if (temp == 0) {
+				return counter - 1;
 			}
-			
+
 
 		}
 		tabelaUzera[counter] = a;
-		
 
-	
-	
+
+
+
 	}
-	return counter+1;
-	
-	}
+	return counter + 1;
 
-
-
-
+}
 
 int losowanieLiczby(int tabelaUzera[], int tablicaLosowana[]) {
 	int x;
-	
+
 
 
 	x = rand() % 9;
 	x = tabelaUzera[x];
 	return x;
 }
-	
-
-
-	
 
 
 
-	int main() {
 
 
-		int tablicaLiczb[10];
-		int tablicaLosowana[8];
-		int counter = 0;
-		int x;
-		srand(time(NULL));
-		
-
-		while (counter < 10) {    //za³atwia dodawanie liczb niepowtarzaj¹cych siê od u¿ytkownika
-			cout<<"counter= " << counter << endl;
-			x = wczytajLiczbê();
-			counter=liczbyDoTabeli(tablicaLiczb, counter, x);
-			
-			
-
-			
-			
-			
-		}
-		
-		for (int i = 0; i < 10; i++) {
-			cout << "Twoje liczby to: " << tablicaLiczb[i] << endl;
-		}
-
-		counter = 0;
-		
-		while (counter < 8) {
-			x = losowanieLiczby(tablicaLiczb, tablicaLosowana);
-			counter = liczbyDoTabeli(tablicaLosowana, counter, x);
-			
-		}
-		for (int i = 0; i < 8; i++) {
-			cout << "Wylosowane  liczby to: " << tablicaLosowana[i] << endl;
-		}
 
 
-		return 0;
+int main() {
+
+
+	int tablicaLiczb[10];
+	int tablicaLosowana[8];
+	int counter = 0;
+	int x;
+	srand(time(NULL));
+
+
+	while (counter < 10) {    //za³atwia dodawanie liczb niepowtarzaj¹cych siê od u¿ytkownika
+
+		x = wczytajLiczbê();
+		counter = liczbyDoTabeli(tablicaLiczb, counter, x);
+
+
+
 	}
+
+	for (int i = 0; i < 10; i++) {
+		cout << "Twoje liczby to: " << tablicaLiczb[i] << endl;
+	}
+
+	counter = 0;
+
+	while (counter < 8) {
+		x = losowanieLiczby(tablicaLiczb, tablicaLosowana);
+		counter = liczbyDoTabeli(tablicaLosowana, counter, x);
+
+	}
+	for (int i = 0; i < 8; i++) {
+		cout << "Wylosowane  liczby to: " << tablicaLosowana[i] << endl;
+	}
+
+
+	return 0;
+}
 
 
 
