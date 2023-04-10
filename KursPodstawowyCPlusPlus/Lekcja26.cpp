@@ -3,11 +3,11 @@
 Uwaga!
 Treœæ niniejszego rozdzia³u nie zawiera rozwi¹zania problemu lecz wskazówki - zadanie wymaga przede wszystkim zastanowienia siê i przeprowadzenia szczegó³owej analizy problemu do konkretnego przypadku przedstawionego w zadaniu. Zadanie nie wymaga wiêkszej wiedzy z zakresu programowania ni¿ ta, która zosta³a przedstawiona do tej pory.
 
-2. Zmodyfikuj program z pierwszego zadania tak, aby u¿ytkownik musia³ podaæ 10 liczb, a 8 z nich bêdzie losowanych bez powtórzeñ. SprawdŸ czy wyniki s¹ poprawne.*/
+2. Zmodyfikuj program z pierwszego zadania tak, aby u¿ytkownik musia³ podaæ 10 liczb, a 8 z nich bêdzie losowanych bez powtórzeñ. SprawdŸ czy wyniki s¹ poprawne.
+*/
 
 
-
-
+/*
 #include <cstdlib>
 #include <iostream>
 #include <ctime>
@@ -115,20 +115,4 @@ int main() {
 	return 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
