@@ -10,7 +10,7 @@
         Znajduje najmniejsz¹ oraz najwiêksz¹ wylosowan¹ liczbê.
         Wypisuje najmniejsz¹ i najwiêksz¹ wylosowan¹ liczbê.
     Program nie mo¿e u¿ywaæ pêtli innych ni¿ pêtla for
-    .*/
+    .
 
 #include <cstdlib>
 #include <ctime>
@@ -24,11 +24,14 @@ using namespace std;
 
 
 void wypelnianie(int tablica[]) {
+    cout << "tabel wype³niona ciagiem (1 + n*5)" << endl;;
     int temp=0;
     for (int i = 0; i < 20; i++) {
         temp = (1 + i * 5);
         tablica[i] = temp;
+        cout << "--------------------------------------------" << endl;
         cout << "Pozycja " << i + 1 << " twojej tablicy to: " << tablica[i] << endl;
+        cout << "--------------------------------------------" << endl;
     }
 }
 
@@ -45,7 +48,9 @@ int sumowanie(int tablica[], int x) {
             counter++;
         }
         while (counter <= x);
-            cout << "Suma tablicy to: " << sum;
+            cout << "--------------------------------------------" << endl;
+            cout << "Suma tablicy to: " << sum << endl;
+            cout << "--------------------------------------------" << endl;
         return sum;
 }
 
@@ -57,11 +62,11 @@ void losowanieLiczb(int odLiczby, int doLiczby, int ileLiczb, int tablica[]) {
     }
     cout << " Wylosowane liczby w kolejnoœci to: " << endl;
     for (int i = 0; i < ileLiczb; i++) {
-        cout << tablica[i] << ", ";
+        cout << tablica[i] << ","<<endl;
     }
     cout << " Wylosowane liczby w odwrotnej kolejnoœci to: " << endl;
     for (int i = ileLiczb - 1; i > -1; i--) {
-        cout << tablica[i] << ", ";
+        cout << tablica[i] << ", "<<endl;
     }
     int max=0;
     int min=0;
@@ -76,8 +81,11 @@ void losowanieLiczb(int odLiczby, int doLiczby, int ileLiczb, int tablica[]) {
             }
             
     }
+    cout << endl;
     cout << "najmniejsza liczba to: " << min << endl;
+    cout << "--------------------------------------------" << endl;
     cout << "najwieksza liczba to: " << max << endl;
+    cout << "--------------------------------------------" << endl;
 
 }
 
@@ -94,3 +102,4 @@ int main() {
 
     return 0;
 }
+*/
